@@ -1,0 +1,61 @@
+.Advertising1 {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.AdvertisingItem {
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+
+.AdvertisingItemImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* برای اطمینان از اینکه تصویر تمام فضا را پر کند بدون از دست دادن نسبت تصویر */
+}
+
+.AdvertisingItem::after {
+    content: '';
+    position: absolute;
+    width: 200%;
+    height: 100%;
+    left: 100px;
+    top: -90px;
+    transform: rotate(40deg);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.AdvertisingItem:hover.AdvertisingItem::after {
+    background-color: rgba(255, 255, 255, 0.15);
+    left: -400px;
+    top: 90px;
+}
+
+@media screen and (max-width: 1024px) {
+    .Advertising1 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Advertising1 {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Advertising1 {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .AdvertisingItem {
+        border-radius: 5px;
+    }
+}

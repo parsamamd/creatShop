@@ -1,0 +1,55 @@
+.Bar {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap; /* برای اینکه در صفحات کوچکتر عناصر به خط بعدی بروند */
+}
+
+.barimgbox {
+    text-align: center;
+}
+
+.barimg {
+    width: 134px;
+    height: 134px;
+    border-radius: 50%;
+    border: #e14536 solid 3px;
+    padding: 5px;
+    cursor: pointer;
+    transition: border 0.3s ease; /* برای افزودن انیمیشن به تغییرات مرز */
+}
+
+.barimg:hover {
+    border: 5px solid #e14536;
+}
+
+@media screen and (max-width: 768px) {
+    .Bar {
+        gap: 50px;
+    }
+    .barimg {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Bar {
+        gap: 35px;
+    }
+    .barimg {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .Bar {
+        gap: 25px;
+    }
+    .barimg {
+        width: 80px;
+        height: 80px;
+    }
+}

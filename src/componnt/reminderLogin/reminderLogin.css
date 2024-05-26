@@ -1,0 +1,23 @@
+.reminderLogin {
+    width: 100%;
+    background-color: #40515f;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.reminderLogin h1{
+    color: #F3F8FD;
+}
+.reminderLogin button {
+    border: 0;
+    margin-left: 20rem;
+    padding: 10px;
+    background-color: #F8BB4A;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "SahelLight";
+}

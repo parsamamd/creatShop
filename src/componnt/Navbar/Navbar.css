@@ -1,0 +1,113 @@
+.Navbartop {
+    width: 100%;
+    height: 100px;
+    background-color: #fc3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1.5rem;
+}
+
+.iconeLeft {
+    display: flex;
+    gap: 10px;
+}
+
+.IconeBoxNav {
+    background-color: azure;
+    padding: .5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconeRight {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.iconeRight img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.Navboutten {
+    width: 100%;
+    height: 50px;
+    background-color: #fc3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.NavbouttenUL {
+    display: flex;
+    gap: 1rem;
+    padding-right: 1rem;
+
+}
+
+.NavbouttenUL li {
+    font-size: 20px;
+    font-weight: 600;
+    color: #170000;
+    position: relative;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .2s ease;
+    z-index: 1000;
+}
+
+.NavbouttenUL li:hover {
+    background-color: #A2B305;
+
+}
+
+.LIULNav {
+    display: none;
+    position: absolute;
+    background-color: #242526;
+    top: 40px;
+    left: -20px;
+    text-align: right;
+    padding: 15px;
+    border-radius: 5px;
+
+}
+
+.LIULNav li {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.NavbouttenUL li:hover .LIULNav {
+    display: block;
+}
+
+@media screen and (max-width: 450px) {
+    .Navbartop {
+        padding: .5rem;
+    }
+
+    .NavbouttenUL {
+        gap: 0;
+    }
+
+    .NavbouttenUL li {
+        font-size: 16px;
+    }
+
+    .LIULNav {
+        padding: 0;
+    }
+
+    .LIULNav li {
+        font-size: 16px;
+    }
+}

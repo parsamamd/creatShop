@@ -1,0 +1,115 @@
+.Bestseller {
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.BestsellerItem {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.BestsellerItemitem {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 15px;
+}
+
+.mobailBestseller {
+    background-color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.mobailBestsellerImg {
+    width: 100%;
+    object-fit: cover;
+}
+
+.BestsellerPrice {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.BestsellerPrice span {
+    color: #2A7F62;
+}
+
+.Bestsellerstar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.Bestsellername {
+    font-size: 18px;
+}
+
+/* Media Queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    .BestsellerItem {
+        width: 90%;
+    }
+
+    .BestsellerItemtitle {
+        font-size: 20px;
+    }
+
+    .BestsellerPrice {
+        font-size: 18px;
+    }
+
+    .Bestsellername {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .BestsellerItem {
+        width: 100%;
+        padding: 5px;
+    }
+
+    .BestsellerItemtitle {
+        font-size: 18px;
+    }
+
+    .BestsellerPrice {
+        font-size: 16px;
+    }
+
+    .Bestsellerstar {
+        font-size: 16px;
+    }
+
+    .Bestsellername {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .BestsellerItemitem {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .BestsellerPrice {
+        font-size: 14px;
+    }
+
+    .Bestsellerstar {
+        font-size: 14px;
+    }
+
+    .Bestsellername {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,47 @@
+.BoxOfproducts {
+    width: 95%;
+    margin: 0 auto;
+    border: 1px solid rgb(252, 61, 61);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.BoxOfproductsUl {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style-type: none;
+}
+
+.BoxOfproductsUl li {
+    border-right: 1px solid rgb(252, 61, 61);
+    border-bottom: 1px solid rgb(252, 61, 61);
+    cursor: pointer;
+}
+
+.BoxOfproductsUl li:nth-child(4n) {
+    border-right: none; /* حذف خط عمودی آخرین آیتم هر ردیف */
+}
+
+.BoxOfproductsUl li:nth-last-child(-n + 4) {
+    border-bottom: none; /* حذف خط افقی ردیف آخر */
+}
+
+.BoxOfproductsUlItemimg {
+    width: 100%;
+    height: auto;
+}
+.seeMore{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #55D3EB;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

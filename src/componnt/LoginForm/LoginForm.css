@@ -1,0 +1,90 @@
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    width: 25%;
+    border-radius: 20px;
+    padding: 1rem;
+    z-index: 999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* برای افزودن سایه به فرم */
+}
+
+.LoginFormTitle {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.LoginInput {
+    width: 100%;
+}
+
+.LoginInput form {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+
+.LoginInput form input {
+    width: 100%;
+    padding: 0.5rem; /* افزودن پدینگ برای بهتر شدن ظاهر اینپوت‌ها */
+    border: 1px solid #ccc; /* افزودن بوردر به اینپوت‌ها */
+    border-radius: 5px; /* افزودن بوردر رادیوس به اینپوت‌ها */
+}
+
+.LoginGoSingup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 16px;
+    margin-top: 1rem; /* افزودن فاصله از بالا برای بهتر شدن ظاهر */
+}
+
+.LoginGoSingup a {
+    color: rgb(87, 196, 57);
+    text-decoration: none; /* حذف زیرخط لینک */
+    margin-top: 0.5rem; /* افزودن فاصله از بالا برای لینک */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .LoginForm {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .LoginForm {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .LoginForm {
+        width: 90%;
+        padding: 0.5rem; /* کاهش پدینگ برای موبایل‌ها */
+    }
+
+    .LoginFormTitle {
+        font-size: 24px; /* کاهش اندازه فونت عنوان برای موبایل‌ها */
+    }
+
+    .LoginInput form {
+        padding: 0.5rem; /* کاهش پدینگ فرم برای موبایل‌ها */
+    }
+
+    .LoginInput form input {
+        padding: 0.5rem; /* حفظ پدینگ اینپوت‌ها در موبایل‌ها */
+    }
+
+    .LoginGoSingup {
+        font-size: 14px; /* کاهش اندازه فونت لینک برای موبایل‌ها */
+    }
+}

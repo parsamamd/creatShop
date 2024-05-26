@@ -1,0 +1,129 @@
+.SearchPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SearchPageTop {
+    width: 95%;
+    margin: 1rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap; /* اضافه کردن فراخوانی به صورت همزمان */
+    justify-content: space-evenly;
+    border-radius: 5px;
+}
+
+.SearchPageTopSearch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #ebe8e8;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.SearchPageTopSearch input {
+    height: 100%;
+    border: 0;
+    outline: none;
+    font-family: "SahelLight";
+    background-color: transparent;
+    user-select: none;
+    flex: 1; /* اضافه کردن انعطاف پذیری */
+}
+
+.SearchPageTop select {
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    background-color: #ebe8e8;
+    padding: 5px;
+    font-family: "SahelLight";
+    text-align: right;
+}
+
+.SearchPageBoutten {
+    display: flex;
+    margin: 1rem auto;
+    justify-content: space-between;
+    width: 95%;
+    gap: 10px;
+    flex-wrap: wrap; /* اضافه کردن فراخوانی به صورت همزمان */
+}
+
+.SearchPageFillter {
+    width: 20%;
+    background-color: rgb(148, 245, 211);
+    border-radius: 5px;
+}
+
+.SearchPageFillterUl {
+    text-align: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.SearchPageFillterItem {
+    cursor: pointer;
+    transition: all .3s ease;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+.SearchPageFillterItem:hover {
+    background-color: rgb(127, 255, 212);
+}
+
+.SearchPageBoxPro {
+    width: 95%; /* تغییر عرض */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* اضافه کردن مشابه */
+    gap: 1rem;
+    margin: 1rem auto; /* اضافه کردن فضای بیشتر بین آیتم‌ها */
+}
+
+.SearchPageBoxProProdact {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1rem;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid;
+}
+
+.SearchPageBoxProProdact img {
+    width: 100%;
+    display: block;
+}
+
+.SearchPageBoxProProdactName {
+    color: #555;
+}
+
+.SearchPageBoxProProdactv {
+    color: rgb(6, 197, 57);
+}
+
+.SearchPageBoxProProdactStar {
+    font-size: 20px;
+}
+
+.SearchPageBoxProProdactStarcolor {
+    color: gold;
+}
+
+.boxSearchPageBoxPro {
+    width: 95%; /* تغییر عرض */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}

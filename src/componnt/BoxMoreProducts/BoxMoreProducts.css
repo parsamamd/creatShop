@@ -1,0 +1,79 @@
+.BoxMoreProducts {
+    width: 95%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.BoxMoreProductsUl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style-type: none;
+    border: 1px solid rgb(252, 61, 61);
+    border-radius: 10px;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.BoxMoreProductsUl li {
+    border-right: 1px solid rgb(252, 61, 61);
+    border-bottom: 1px solid rgb(252, 61, 61);
+    padding: 1rem;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.BoxMoreProductsUl li:nth-child(2n) {
+    border-right: none;
+}
+
+.BoxMoreProductsUl li:nth-child(3n),
+.BoxMoreProductsUl li:nth-child(4n) {
+    border-bottom: none;
+}
+
+.BoxMoreProductsUlItemIMg {
+    width: 100%;
+    height: auto;
+}
+
+.seeMore {
+    /* تنظیمات برای دکمه یا لینک "بیشتر ببینید" */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 1024px) {
+    .BoxMoreProducts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .BoxMoreProductsUl {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .BoxMoreProducts {
+        grid-template-columns: 1fr;
+    }
+
+    .BoxMoreProductsUl {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .BoxMoreProducts {
+        grid-template-columns: 1fr;
+    }
+
+    .BoxMoreProductsUl {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .BoxMoreProductsUl li {
+        border-right: none;
+    }
+}
